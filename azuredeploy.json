@@ -126,8 +126,7 @@
       "name": "[variables('amlStorageName')]",
       "location": "[parameters('location')]",
       "dependsOn": [
-        "[resourceId('Microsoft.Network/virtualNetworks', variables('vnetName'))]",
-        "[resourceId('Microsoft.Storage/storageAccounts', variables('adlsName'))]"
+        "[resourceId('Microsoft.Network/virtualNetworks', variables('vnetName'))]"
       ],
       "tags": {},
       "sku": {
